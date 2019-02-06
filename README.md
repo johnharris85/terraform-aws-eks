@@ -153,6 +153,7 @@ MIT Licensed. See [LICENSE](https://github.com/terraform-aws-modules/terraform-a
 | Name | Description |
 |------|-------------|
 | cluster\_certificate\_authority\_data | Nested attribute containing certificate-authority-data for your cluster. This is the base64 encoded certificate data required to communicate with your cluster. |
+| cluster\_iam\_role\_name | default IAM role name for EKS control plane |
 | cluster\_endpoint | The endpoint for your EKS Kubernetes API. |
 | cluster\_id | The name/id of the EKS cluster. |
 | cluster\_security\_group\_id | Security group ID attached to the EKS cluster. |

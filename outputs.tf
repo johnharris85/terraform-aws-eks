@@ -9,6 +9,11 @@ output "cluster_id" {
 #   value       = "${aws_eks_cluster.this.arn}"
 # }
 
+output "cluster_iam_role_name" {
+  description = "default IAM role name for EKS control plane"
+  value       = "${aws_iam_role.cluster.name}"
+}
+
 output "cluster_certificate_authority_data" {
   description = "Nested attribute containing certificate-authority-data for your cluster. This is the base64 encoded certificate data required to communicate with your cluster."
   value       = "${aws_eks_cluster.this.certificate_authority.0.data}"
